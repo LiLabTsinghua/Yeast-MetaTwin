@@ -17,7 +17,7 @@ We designed a systematic workflow for mining underground metabolism, which combi
          pip install -r requirements.txt   
 
 ## Citation
-Please cite the paper [Deep learning-based kcat prediction enables improved enzyme-constrained model reconstruction](https://www.nature.com/articles/s41929-022-00798-z)
+Please cite the paper [To be updated] ()
 
 Contact
 -------
