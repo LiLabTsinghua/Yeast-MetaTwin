@@ -1,3 +1,11 @@
+Yeast-MetaTwin
+======
+
+<p align="center">
+  <img  src="doc/logo.png" width = "400">
+</p>
+
+
 ## Introduction
 We designed a systematic workflow for mining underground metabolism, which combines rule-based retrosynthesis approach with deep learning-based enzyme annotation approach. Using this workflow, we constructed **Yeast-MetaTwin**, the first genome-scale metabolic model that systematically integrates underground networks, Yeast-MetaTwin encompasses 84% of the predicted metabolic enzymes and 92% of the metabolome in yeast.
 
