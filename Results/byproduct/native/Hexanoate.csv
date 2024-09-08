@@ -1,0 +1,9 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+Hexanoate,1,rxn55,H+ + NADPH + oxygen + hexanoate => H2O + NADP(+) + (r)-3-hydroxyhexanoic acid,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C
+Hexanoate,2,rxn786,hydrogen peroxide + hexanoate => H2O + (r)-3-hydroxyhexanoic acid,YNL131W or YPL098C or YPR020W
+Hexanoate,3,rxn1554,oxaloacetate + oxygen + hexanoate => carbon dioxide + (r)-3-hydroxyhexanoic acid + malonate,YLL057C or YER051W or YKL195W
+Hexanoate,4,rxn1555,2-oxoglutarate + oxygen + hexanoate => carbon dioxide + succinate + (r)-3-hydroxyhexanoic acid,YLL057C or YER051W or YKL195W
+Hexanoate,5,rxn1556,4-hydroxy-2-oxoglutarate + oxygen + hexanoate => (S)-malate + carbon dioxide + (r)-3-hydroxyhexanoic acid,YLL057C or YER051W or YKL195W
+Hexanoate,6,rxn1557,2-oxobutanoate + oxygen + hexanoate => carbon dioxide + propionate + (r)-3-hydroxyhexanoic acid,YLL057C or YER051W or YKL195W
+Hexanoate,7,rxn1558,keto-phenylpyruvate + oxygen + hexanoate => carbon dioxide + phenylacetic acid + (r)-3-hydroxyhexanoic acid,YLL057C or YER051W or YKL195W
+Hexanoate,8,rxn2273,H+ + NADH + hexanoate => H2O + NAD + n-hexanal,YBR006W or YPL061W or YJR009C or YHR037W or YER073W or YDR158W or YMR169C or YGR192C or YPL098C or YMR110C or YMR170C or YOR374W or YOR323C or YJL052W

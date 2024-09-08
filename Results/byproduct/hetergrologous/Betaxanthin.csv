@@ -1,0 +1,7 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+Betaxanthin,1,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)cc(O)c1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+Betaxanthin,2,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>COc1c(O)ccc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)c1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+Betaxanthin,3,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)c(O)cc1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+Betaxanthin,4,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>O.O.O=C([O-])C1=CC(=CC=NCCc2ccc3c(c2)OCO3)CC(C(=O)[O-])N1,H(+) + NADPH>>NADP(+),"['YMR015C', 'YGL055W', 'YDR297W', 'YLR056W']"
+Betaxanthin,5,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>COc1c2ccc(CCN=CC=C3C=C(C(=O)[O-])NC(C(=O)[O-])C3)c1O2.O.O,H(+) + NADPH>>NADP(+),[]
+Betaxanthin,6,COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)ccc1O.O=O>>COc1cc(CCN=CC=C2C=C(C(=O)[O-])NC(C(=O)[O-])C2)c2cc1O2.O.O,H(+) + NADPH>>NADP(+),[]

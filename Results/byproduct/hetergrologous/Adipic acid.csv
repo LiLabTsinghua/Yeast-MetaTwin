@@ -1,0 +1,2 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+Adipic acid,1,O=C(O)CCCCC(=O)O>>O.O=CCCCCC(=O)O,H(+) + NADPH>>NADP(+),"['YBR006W', 'YPL061W', 'YJR009C', 'YHR037W', 'YER073W', 'YDR158W', 'YMR169C', 'YGR192C', 'YPL098C', 'YMR110C', 'YMR170C', 'YOR374W', 'YOR323C', 'YJL052W', 'YBR006W', 'YPL061W', 'YJR009C', 'YHR037W', 'YER073W', 'YDR158W', 'YMR169C', 'YGR192C', 'YPL098C', 'YMR110C', 'YMR170C', 'YOR374W', 'YOR323C', 'YJL052W']"

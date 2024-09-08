@@ -1,0 +1,5 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+Fumarate,1,rxn165,ammonium + fumarate => L-aspartate,YNL021W or YFL060C or YIL060W or YNL334C or YLR351C or YPR068C or YGL037C or YLR308W or YMR281W or YBR248C or YLR155C or YBR183W or YJL213W or YPL096W or YPL087W or YMR154C or YPL116W or YIL163C or YDR428C or YPR138C or YGL194C or YNL330C or YLR158C or YLR307W or YJL126W or YDR321W or YLR157C or YDR242W or YLR160C or YMR095C or YGL196W or YER086W or YCL064C or YKL218C
+Fumarate,2,rxn394,"fumarate + 2-hexaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol => 2-hexaprenyl-5-hydroxy-6-methoxy-3-methyl-1,4-benzoquinone + succinate",YJL045W or YLL018C-A or YKL148C or YLL041C or YPL252C
+Fumarate,3,rxn2259,fumarate + L-aspartate => succinate + iminoaspartic acid,YBR035C or YFR033C
+Fumarate,4,rxn2595,fumarate + H+ => carbon dioxide + Acrylic acid,YNL169C or YGR087C or YNR043W or YLL028W or YNL052W or YDR380W or YDL080C or YLR044C or YKL088W or YKR072C or YEL021W or YOR128C or YKR097W or YOL052C or YKL184W or YDR539W or YER010C or YDR047W or YMR250W or YLR134W

@@ -355,7 +355,7 @@ def are_dicts_equal(dict1, dict2):
     # print(are_dicts_equal(dict1, dict2))  # output True
     # print(are_dicts_equal(dict1, dict3))  # output False
 
-def get_yeast8U(new_met_info_to_GEM_path,rxndb_to_model_total_info_path,yeast8_reaction_in_rxndb_json,yeast870_path,yeast8U_path):
+def get_yeast8U(new_met_info_to_GEM_path,rxndb_to_model_total_info_path,yeast8_reaction_in_rxndb_json,yeast870_path,yeast8U_path,metinfoID_2_YMDBID):
     met_info = pd.read_csv(new_met_info_to_GEM_path)
     print(met_info.shape)
     rxndb_to_model = pd.read_csv(rxndb_to_model_total_info_path)
@@ -369,7 +369,7 @@ def get_yeast8U(new_met_info_to_GEM_path,rxndb_to_model_total_info_path,yeast8_r
     with open(yeast8_reaction_in_rxndb_json, 'r') as file:
         yeast8_reaction_in_rxndb_dict = json.load(file)
         
-    # yeast8_reaction_in_rxndb = list(set(yeast8_reaction_in_rxndb.values()))
+    yeast8_reaction_in_rxndb = list(set(yeast8_reaction_in_rxndb.values()))
     yeast8_reaction_in_rxndb = list(set([x for lst in yeast8_reaction_in_rxndb_dict.values() for x in lst]))
     rxndb_to_model = rxndb_to_model[~rxndb_to_model['NO'].isin(yeast8_reaction_in_rxndb)]
     print(rxndb_to_model.shape)
@@ -381,7 +381,56 @@ def get_yeast8U(new_met_info_to_GEM_path,rxndb_to_model_total_info_path,yeast8_r
         met_id = row['ID']
         met_compartment = row['compartment']
         met_smiles = row['new_met_smiles']
-        metabolites[met_id] = Metabolite(met_id, formula='', name='', compartment=met_compartment)
+        if metinfoID_2_YMDBID is not None:
+            if met_id in metinfoID_2_YMDBID:
+                metabolites[met_id] = Metabolite(met_id, formula='', name='_'.join(metinfoID_2_YMDBID[met_id]), compartment=met_compartment)
+            else:
+                metabolites[met_id] = Metabolite(met_id, formula='', name='', compartment=met_compartment)
+        else:
+            metabolites[met_id] = Metabolite(met_id, formula='', name='', compartment=met_compartment)
+
+    ## new reaction
+    for index,row in tqdm(rxndb_to_model.iterrows(),total=len(rxndb_to_model)):
+        reaction = Reaction(row['NO'])
+        reaction.name = row['NO']
+        reaction.subsystem = ''
+        reaction.lower_bound = 0.  # This is the default
+        reaction.upper_bound = 1000.  # This is the default
+
+        reactant_met_num = row['equation_dict']
+        for met_id, coeff in reactant_met_num.items():
+            met = metabolites.get(met_id)
+            if met:
+                reaction.add_metabolites({met: coeff})
+        if  row['GPR']:
+            reaction.gene_reaction_rule = row['GPR'].replace('(','').replace(')','')
+        model.add_reactions([reaction])
+
+    # cobra.io.save_matlab_model(model, yeast8U_path)
+    cobra.io.save_yaml_model(model, yeast8U_path)
+
+def get_yeast8U_step4(new_met_info_to_GEM_path,rxndb_to_model_total_info_path,yeast870_path,yeast8U_path,metinfoID_2_YMDBID):
+    met_info = pd.read_csv(new_met_info_to_GEM_path)
+    print(met_info.shape)
+    rxndb_to_model = pd.read_csv(rxndb_to_model_total_info_path)
+    rxndb_to_model['equation_dict'] = rxndb_to_model['equation_dict'].apply(lambda x:literal_eval(x))
+    print(rxndb_to_model.shape)
+
+    model = cobra.io.load_yaml_model(yeast870_path)
+    ## new metabolite
+    metabolites = {}
+    for index, row in met_info.iterrows():
+        met_id = row['ID']
+        met_compartment = row['compartment']
+        met_smiles = row['new_met_smiles']
+        if metinfoID_2_YMDBID is not None:
+            if met_id in metinfoID_2_YMDBID:
+                metabolites[met_id] = Metabolite(met_id, formula='', name='_'.join(metinfoID_2_YMDBID[met_id]), compartment=met_compartment)
+            else:
+                metabolites[met_id] = Metabolite(met_id, formula='', name='', compartment=met_compartment)
+        else:
+            metabolites[met_id] = Metabolite(met_id, formula='', name='', compartment=met_compartment)
+
     ## new reaction
     for index,row in tqdm(rxndb_to_model.iterrows(),total=len(rxndb_to_model)):
         reaction = Reaction(row['NO'])

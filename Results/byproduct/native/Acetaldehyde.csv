@@ -1,0 +1,15 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+Acetaldehyde,1,rxn86,acetaldehyde + ubiquinol-6 => ethanol + ubiquinone-6,YIL155C
+Acetaldehyde,2,rxn87,"acetaldehyde + 2-hexaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol => 2-hexaprenyl-5-hydroxy-6-methoxy-3-methyl-1,4-benzoquinone + ethanol",YIL155C
+Acetaldehyde,3,rxn90,acetaldehyde + glyceraldehyde 3-phosphate + 2 H+ => 2-deoxy-D-ribose 5-phosphate,YEL046C or YJL170C or YDR294C or YKL060C
+Acetaldehyde,4,rxn323,acetaldehyde + H+ + NADPH + oxygen => glycolaldehyde + H2O + NADP(+),YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C
+Acetaldehyde,5,rxn866,acetaldehyde + 2 ATP + bicarbonate + H2O => 2 ADP + 2 H+ + 2 phosphate + 3-oxopropanoate,YBR218C or YMR207C or YNR016C or YOL130W or YGL062W
+Acetaldehyde,6,rxn1360,"2-amino-6-(hydroxymethyl)-7,8-dihydropteridin-4-ol + acetaldehyde => Dihydrobiopterin",YEL046C or YJL170C or YDR294C or YKL060C
+Acetaldehyde,7,rxn1436,acetaldehyde + ammonium + phosphate => H2O + O-phosphoethanolamine,YFR016C or YGL148W or YML023C or YJR160C or YOL131W or YIL127C or YBR302C or YDR127W or YNL140C or YCR053W or YDL247W or YML132W or YOL053W or YGL116W or YHR155W
+Acetaldehyde,8,rxn1437,acetaldehyde + ammonium + glycerol 3-phosphate => H2O + sn-glycero-3-phosphoethanolamine,YFR016C or YGL148W or YML023C or YJR160C or YOL131W or YIL127C or YBR302C or YDR127W or YNL140C or YCR053W or YDL247W or YML132W or YOL053W or YGL116W or YHR155W
+Acetaldehyde,9,rxn1438,"acetaldehyde + ammonium + phosphatidate (1-16:1, 2-16:1) => H2O + phosphatidylethanolamine (1-16:1, 2-16:1)",YFR016C or YGL148W or YML023C or YJR160C or YOL131W or YIL127C or YBR302C or YDR127W or YNL140C or YCR053W or YDL247W or YML132W or YOL053W or YGL116W or YHR155W
+Acetaldehyde,10,rxn1439,"acetaldehyde + ammonium + phosphatidate (1-16:1, 2-18:1) => H2O + phosphatidylethanolamine (1-18:1, 2-16:1)",YFR016C or YGL148W or YML023C or YJR160C or YOL131W or YIL127C or YBR302C or YDR127W or YNL140C or YCR053W or YDL247W or YML132W or YOL053W or YGL116W or YHR155W
+Acetaldehyde,11,rxn1579,acetaldehyde + D-erythrose 4-phosphate => 2-deoxy-D-glucose 6-phosphate,YEL046C or YJL170C or YDR294C or YKL060C
+Acetaldehyde,12,rxn2003,2-oxobutanoate + acetaldehyde + H+ => H2O + sotolon,nogene
+Acetaldehyde,13,rxn2279,acetaldehyde + H2O => ethylene glycol,YGL009C or YMR323W or YGR254W or YGL040C or YOR391C or YDR234W or YNL335W or YJR024C or YPL262W or YKR009C or YHL018W or YDR533C or YGR155W or YJR016C or YHR140W or YPL280W or YJL097W or YJL200C or YOR202W or YNL036W or YPR002W or YDR222W or YPR170W-B or YGL026C or YKL058W or YPL281C or YOR145C or YPL078C or YJR044C or YLR304C or YHR067W or YHR174W or YNL316C or YCR061W or YOR278W or YFL061W or YMR322C or YKL151C or YOR393W
+Acetaldehyde,14,rxn2989,acetaldehyde + H+ + NADH + oxygen => glycolaldehyde + H2O + NAD,YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C

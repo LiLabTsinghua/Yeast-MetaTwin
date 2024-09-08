@@ -1,0 +1,2 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+"cis,cis-Muconate",1,O=C(O)C=CC=CC(=O)O>>O=C([O-])C[C@H]1C=CC(=O)O1,>>H(+),"['YOL092W', 'YJL153C']"

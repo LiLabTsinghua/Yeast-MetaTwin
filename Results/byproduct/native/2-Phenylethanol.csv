@@ -1,0 +1,8 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+2-Phenylethanol,1,rxn46,2-phenylethanol + 3-hydroxybenzaldehyde => phenylacetaldehyde + 3-hydroxybenzyl alcohol,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+2-Phenylethanol,2,rxn1092,2-phenylethanol + H+ + NADPH + oxygen => H2O + NADP(+) + tyrosol,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C
+2-Phenylethanol,3,rxn1226,2-phenylethanol + FADH2 + oxygen => FAD + H+ + H2O + 2-hydroxyphenylethanol,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C
+2-Phenylethanol,4,rxn1227,2-phenylethanol + FADH2 + oxygen => FAD + H+ + H2O + tyrosol,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C
+2-Phenylethanol,5,rxn1783,2-phenylethanol + H+ + NADH + oxygen => H2O + NAD + 2-hydroxyphenylethanol,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C or YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C or YGR060W or YMR272C or YAL067C
+2-Phenylethanol,6,rxn3050,2-phenylethanol + H+ + NADH + oxygen => H2O + NAD + tyrosol,YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C or YGR060W or YMR272C or YAL067C
+2-Phenylethanol,7,rxn3243,2-phenylethanol + H+ + NADPH + oxygen => H2O + NADP(+) + 2-hydroxyphenylethanol,YCL001W or YHR007C or YAL064W or YGR175C or YJL151C or YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C

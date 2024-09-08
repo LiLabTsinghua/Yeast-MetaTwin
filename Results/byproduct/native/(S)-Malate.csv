@@ -1,0 +1,11 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+(S)-Malate,1,rxn76,(S)-malate + 2-oxoglutarate => oxaloacetate + 2-hydroxyglutarate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,2,rxn155,(S)-malate + FMN => FMNH2 + 3 H+ + oxaloacetate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,3,rxn801,(S)-malate + H+ => (R)-lactate + carbon dioxide,YNL169C or YGR087C or YNR043W or YLL028W or YNL052W or YDR380W or YDL080C or YLR044C or YKL088W or YKR072C or YEL021W or YOR128C or YKR097W or YOL052C or YKL184W or YDR539W or YER010C or YDR047W or YMR250W or YLR134W
+(S)-Malate,4,rxn1354,(S)-malate + pyruvate => (R)-lactate + oxaloacetate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,5,rxn1613,(S)-malate + ubiquinone-6 => oxaloacetate + ubiquinol-6,YIL155C
+(S)-Malate,6,rxn1953,(S)-malate + L-aspartate 4-semialdehyde => L-homoserine + oxaloacetate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,7,rxn1954,(S)-malate + aldehydo-d-galacturonate => oxaloacetate + D-gluconate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,8,rxn1955,(S)-malate + glycolaldehyde => oxaloacetate + ethylene glycol,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,9,rxn1956,(S)-malate + phenylacetaldehyde => 2-phenylethanol + oxaloacetate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+(S)-Malate,10,rxn1957,(S)-malate + propanal => oxaloacetate + propanol,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W

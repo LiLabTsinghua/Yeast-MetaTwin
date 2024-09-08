@@ -1,0 +1,2 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+Ethylene,1,C=C.O=O>>C1CO1.O,NADH + H(+)>>NAD(+),"['YBL098W', 'YNR053C', 'YCL059C', 'YHR176W', 'YOL114C', 'YLL057C', 'YBR298C', 'YDR534C', 'YLR281C', 'YDR402C']"

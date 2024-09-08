@@ -1,0 +1,7 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+L-proline,1,rxn88,ammonium + L-proline => ornithine,YGL196W or YER086W or YCL064C or YKL218C
+L-proline,2,rxn352,H+ + L-proline + NADPH + oxygen => H2O + NADP(+) + trans-4-hydroxy-L-proline,YBL098W or YNR053C or YCL059C or YHR176W or YOL114C or YLL057C or YBR298C or YDR534C or YLR281C or YDR402C
+L-proline,3,rxn1771,2-oxoglutarate + L-proline + oxygen => carbon dioxide + succinate + trans-4-hydroxy-L-proline,YLL057C or YER051W or YKL195W
+L-proline,4,rxn1774,L-proline + oxaloacetate + oxygen => carbon dioxide + trans-4-hydroxy-L-proline + malonate,YLL057C or YER051W or YKL195W
+L-proline,5,rxn1777,4-hydroxy-2-oxoglutarate + L-proline + oxygen => (S)-malate + carbon dioxide + trans-4-hydroxy-L-proline,YLL057C or YER051W or YKL195W
+L-proline,6,rxn1780,2-oxobutanoate + L-proline + oxygen => carbon dioxide + trans-4-hydroxy-L-proline + propionate,YLL057C or YER051W or YKL195W

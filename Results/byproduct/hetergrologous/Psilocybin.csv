@@ -1,0 +1,7 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+Psilocybin,1,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.[H]O[H]>>CN(C)CCc1c[nH]c2cccc([O-])c12.O=P([O-])(O)O,>>2.0 H(+),[]
+Psilocybin,2,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O=O>>C[N+](C)([O-])CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O,H(+) + NADPH>>NADP(+),"['YBL098W', 'YNR053C', 'YCL059C', 'YHR176W', 'YOL114C', 'YLL057C', 'YBR298C', 'YDR534C', 'YLR281C', 'YDR402C']"
+Psilocybin,3,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O=O>>CN(C)CCC(=O)c1c(NC=O)cccc1OP(=O)(O)O,>>,"['YMR009W', 'YJR078W', 'YJR025C']"
+Psilocybin,4,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O=O>>CN(C)CCc1c[nH]c2ccc(O)c(OP(=O)(O)O)c12.O,H(+) + NADPH>>NADP(+),"['YBL098W', 'YNR053C', 'YCL059C', 'YHR176W', 'YOL114C', 'YLL057C', 'YBR298C', 'YDR534C', 'YLR281C', 'YDR402C']"
+Psilocybin,5,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O=O>>CN(C)CCc1c[nH]c2c(O)ccc(OP(=O)(O)O)c12.O,H(+) + NADPH>>NADP(+),"['YBL098W', 'YNR053C', 'YCL059C', 'YHR176W', 'YOL114C', 'YLL057C', 'YBR298C', 'YDR534C', 'YLR281C', 'YDR402C']"
+Psilocybin,6,CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12.O=O>>CN(C)CCc1c[nH]c2cc(O)cc(OP(=O)(O)O)c12.O,H(+) + NADPH>>NADP(+),"['YBL098W', 'YNR053C', 'YCL059C', 'YHR176W', 'YOL114C', 'YLL057C', 'YBR298C', 'YDR534C', 'YLR281C', 'YDR402C']"

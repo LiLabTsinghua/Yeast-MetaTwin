@@ -1,0 +1,16 @@
+Product name,Predicted reaction ID,Predicted reaction,IgnoreMet,Predicted genes of reaction
+(S)-Reticuline,1,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)C(Cc1cc(O)c(OC)c(O)c1)N(C)CC2.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C', 'YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+(S)-Reticuline,2,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc(CC2c3c(cc(OC)c(O)c3O)CCN2C)cc1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C', 'YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+(S)-Reticuline,3,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)C(Cc1ccc(OC)c(O)c1O)N(C)CC2.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C', 'YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+(S)-Reticuline,4,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc(O)c(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C', 'YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+(S)-Reticuline,5,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc(CC2c3cc(O)c(OC)c(O)c3CCN2C)cc1O.O,H(+) + NADPH>>NADP(+),"['YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C', 'YCL001W', 'YHR007C', 'YAL064W', 'YGR175C', 'YJL151C']"
+(S)-Reticuline,6,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc(CC2c3cc4c(cc3CCN2C)OCO4)cc1O.O.O,H(+) + NADPH>>NADP(+),"['YMR015C', 'YGL055W', 'YDR297W', 'YLR056W']"
+(S)-Reticuline,7,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)C(Cc1ccc3c(c1)OCO3)N(C)CC2.O.O,H(+) + NADPH>>NADP(+),"['YMR015C', 'YGL055W', 'YDR297W', 'YLR056W']"
+(S)-Reticuline,8,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c3cc1Oc1cc(cc(O)c1OC)CC3N(C)CC2.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,9,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)C(Cc1cc3c(OC)cc1O3)N(C)CC2.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,10,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c3cc1Oc1c(ccc(OC)c1O)CC3N(C)CC2.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,11,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)CC1c3cc(c(OC)cc3CCN1C)O2.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,12,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc2cc1Oc1c3c(cc(O)c1OC)C(C2)N(C)CC3.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,13,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc2cc1Oc1c(O)c(OC)cc3c1C(C2)N(C)CC3.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,14,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1ccc(CC2c3cc4c(OC)c(c3CCN2C)O4)cc1O.O.O,H(+) + NADPH>>NADP(+),[]
+(S)-Reticuline,15,COc1ccc(CC2c3cc(O)c(OC)cc3CCN2C)cc1O.O=O>>COc1cc2c(cc1O)C(Cc1cc3c(OC)c(c1)O3)N(C)CC2.O.O,H(+) + NADPH>>NADP(+),[]

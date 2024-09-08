@@ -1,0 +1,10 @@
+Product name,Predicted reaction number,Predicted reaction Yeast-MetaTwin ID,Predicted reaction,Predicted genes of reaction
+Glycolate,1,rxn42,3 H+ + 2 NADPH + glycolate => H2O + 2 NADP(+) + ethylene glycol,YBR006W or YPL061W or YJR009C or YHR037W or YER073W or YDR158W or YMR169C or YGR192C or YPL098C or YMR110C or YMR170C or YOR374W or YOR323C or YJL052W
+Glycolate,2,rxn107,glyceraldehyde 3-phosphate + glycolate => 3-phosphonato-D-glycerate(3-) + glycolaldehyde,YMR108W or YGR043C or YLR354C or YBR117C or YCL009C or YPR074C
+Glycolate,3,rxn418,2-oxoglutarate + glycolate => glyoxylate + 2-hydroxyglutarate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,4,rxn419,glycolate + 2-oxaloglutaric acid => glyoxylate + homoisocitrate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,5,rxn420,oxaloacetate + glycolate => (S)-malate + glyoxylate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,6,rxn421,glycolate + oxalosuccinic acid => glyoxylate + isocitrate,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,7,rxn422,2-oxobutanoate + glycolate => glyoxylate + 2-hydroxybutyric acid,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,8,rxn540,3-hydroxybenzaldehyde + glycolate => glyoxylate + 3-hydroxybenzyl alcohol,YGR255C or YDL178W or YCL005W-A or YIR028W or YEL071W
+Glycolate,9,rxn3129,2 H+ + NADPH + glycolate => glycolaldehyde + H2O + NADP(+),YBR006W or YPL061W or YJR009C or YHR037W or YER073W or YDR158W or YMR169C or YGR192C or YPL098C or YMR110C or YMR170C or YOR374W or YOR323C or YJL052W
