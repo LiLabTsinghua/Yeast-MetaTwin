@@ -737,7 +737,7 @@ def process_retrorules(retrorules,s):
     return rules_product_smiles_lst
 
 
-def process_rules_with_multiprocessing(rules_product_smiles_lst, yeast_total_smiles, num_processes=60,cutoff = 0.3  ):
+def process_rules_with_multiprocessing(rules_product_smiles_lst, yeast_total_smiles, num_processes=5,cutoff = 0.3  ):
     pool = mp.Pool(num_processes)
 
     # Initialize a dictionary to store the results
@@ -803,7 +803,7 @@ def filter_smiles(new_products_smiles, productSMARTs):
     new_products_smiles = list(map(process_smi, [(smiles, productSMARTs_mol) for smiles in new_products_smiles]))
 
     return new_products_smiles
-def process_retrorules_and_save(rxndb_path,failedrxn_path,retrorules,heterologous_met_smiles=None,num_process=50):
+def process_retrorules_and_save(rxndb_path,failedrxn_path,retrorules,heterologous_met_smiles=None,num_process=5):
     failedrxn = []
     process_retrorule_new_partial = partial(process_retrorule_new,heterologous_met_smiles = heterologous_met_smiles)
     with multiprocessing.Pool(num_process) as pool:
@@ -1066,7 +1066,7 @@ def filter_smiles_parallel(df):
                 similar_smiles_dict[normalize_smiles(products[x])] = {'smiles_in_mets_total_smiles': new_products_smile_one, 'scores': score_one}
             df.at[index, 'smiles_similarity_total'] = similar_smiles_dict
     return df
-def filter_smiles_muti(retrorules,retrosys_smiles_calculate_similarity_filter_file_path,num_process=60):
+def filter_smiles_muti(retrorules,retrosys_smiles_calculate_similarity_filter_file_path,num_process=5):
     chunks = np.array_split(retrorules, num_process) 
     with mp.Pool(num_process) as pool:
         results = list(tqdm(pool.imap(filter_smiles_parallel, chunks), total=len(chunks)))
@@ -1134,7 +1134,7 @@ def process_file(file,rxndb_path,inchikey0,rxndb_drop_path):
         except:
             pass
 
-def drop_rxndb(rxndb_path, rxndb_drop_path, total_met,num_processes=60):
+def drop_rxndb(rxndb_path, rxndb_drop_path, total_met,num_processes=5):
     inchikey0 = load_pickle(total_met)
     files = os.listdir(rxndb_path)
     process_file_partial = partial(process_file,rxndb_path=rxndb_path,inchikey0=inchikey0,rxndb_drop_path=rxndb_drop_path)
@@ -1191,7 +1191,7 @@ def process_smiles(i,smile_max_score,yeast_total_smiles):    ###The highest simi
         return result
     else: return {'smile': '', 'score': '', 'sim_smile': ''}
 
-def calculate_smile_max_score(rxndb_all_reactant_smile,yeast_total_smiles,num_processes=60):
+def calculate_smile_max_score(rxndb_all_reactant_smile,yeast_total_smiles,num_processes=5):
     smile_max_score = {'smile': [], 'score': [], 'sim_smile': []}
 
     pool = multiprocessing.Pool(num_processes)
@@ -1222,9 +1222,8 @@ def process_chunk(chunk_df):
             if j not in chunk_all_smile:
                 chunk_all_smile.append(j)
     return chunk_all_smile
-def parallel_process_rxn_smiles(rxndb_df_test, n_splits=80,num_process=50):
+def parallel_process_rxn_smiles(rxndb_df_test, n_splits=5,num_process=5):
     chunks = np.array_split(rxndb_df_test, n_splits)  # split the DataFrame into n parts
-
     with multiprocessing.Pool(num_process) as pool:
         results = list(tqdm(pool.imap(process_chunk, chunks), total=len(chunks)))
 
@@ -1234,7 +1233,7 @@ def parallel_process_rxn_smiles(rxndb_df_test, n_splits=80,num_process=50):
     print('number of metabolites in RXNDB:', len(rxndb_all_smile))
     return rxndb_all_smile
 
-def calculate_save_smiles_max_score(rxndb_all_smiles, yeast8_total_smiles,rxndb_met_max_score_file,num_processes=60):
+def calculate_save_smiles_max_score(rxndb_all_smiles, yeast8_total_smiles,rxndb_met_max_score_file,num_processes=5):
     smiles_max_score = calculate_smile_max_score(rxndb_all_smiles,yeast8_total_smiles,num_processes=num_processes)
     smiles_max_score_pd = pd.DataFrame(smiles_max_score)
     smiles_max_score_pd.to_csv(rxndb_met_max_score_file,index=None)
@@ -1294,7 +1293,7 @@ def process_chunk_product(chunk_df,smile_max_score_pd):
         if result[1] is not None:
             success_rxndbid.append(result[1])
     return smiles_success, success_rxndbid
-def process_reactions_in_parallel_reactant(rxndb,origin_smile_max_score_pd, num_processes=100, num_iterations=1):
+def process_reactions_in_parallel_reactant(rxndb,origin_smile_max_score_pd, num_processes=5, num_iterations=1):
     num = 0
     tmp_smile_max_score_pd = origin_smile_max_score_pd
     while num < num_iterations:
@@ -1302,7 +1301,7 @@ def process_reactions_in_parallel_reactant(rxndb,origin_smile_max_score_pd, num_
         # pool = multiprocessing.Pool(num_processes)
         smiles_success = []
         success_rxndbid = []
-        chunks = np.array_split(rxndb, 100)
+        chunks = np.array_split(rxndb, 5)
         with multiprocessing.Pool(num_processes) as pool:
             for result in tqdm(pool.imap(partial(process_chunk_reactant,smile_max_score_pd=tmp_smile_max_score_pd), chunks), total=len(chunks)):
                 smiles_success.extend(result[0])
@@ -1423,7 +1422,7 @@ def process_smiles_annotation(i,yeast_total_smiles):    ###The highest similarit
     return result
         
 
-def calculate_smile_max_score_annotation(rxndb_all_reactant_smile,yeast_total_smiles,num_process=30):
+def calculate_smile_max_score_annotation(rxndb_all_reactant_smile,yeast_total_smiles,num_process=5):
     smile_max_score = {'smile': [], 'score': [], 'sim_smile': []}
 
     pool = multiprocessing.Pool(num_process)
@@ -1937,13 +1936,13 @@ def compare_inchikey0_mnxmeta(inchikey, compare_total_inchikey):
     return inchikey, matched_inchikey
 
 
-def get_smiles2metnetx(mnxmeta_smile_filtered, yeast8_total_inchikey_carbon,yeast8_smiles2metnetx_path,num_processes=60):
+def get_smiles2metnetx(mnxmeta_smile_filtered, yeast8_total_inchikey_carbon,yeast8_smiles2metnetx_path,num_processes=5):
     
     res = {}
     compare_smiles_partial = partial(compare_inchikey0_mnxmeta, compare_total_inchikey=yeast8_total_inchikey_carbon)
     with multiprocessing.Pool(num_processes) as p:
     
-        for s, t in tqdm(p.imap_unordered(compare_smiles_partial,mnxmeta_smile_filtered,chunksize=100), total=len(mnxmeta_smile_filtered)):
+        for s, t in tqdm(p.imap_unordered(compare_smiles_partial,mnxmeta_smile_filtered,chunksize=1), total=len(mnxmeta_smile_filtered)):
             res[s] = t
     
     # for s, t in tqdm(map(compare_smiles_partial,mnxmeta_smile_filtered), total=len(mnxmeta_smile_filtered)):
