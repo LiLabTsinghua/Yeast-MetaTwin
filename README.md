@@ -21,8 +21,24 @@ We designed a systematic workflow for mining underground metabolism, which combi
 
   - Download required Python package
          
+         conda install ipykernel
+         pip install biopython
+         pip install cobra
+         pip install fair-esm
+         pip install gurobipy  
+         pip install matplotlib
+         pip install numpy
+         pip install pandas
+         pip install plotly    
+         pip install pubchempy
+         pip install rdchiral
+         pip install rdkit  
+         pip install rdkit-pypi
+         pip install rxnmapper
+         pip install scikit-learn
+         pip install seaborn        
          pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu113
-         pip install -r requirements.txt   
+          
 
 ## Citation
 Please cite the paper [To be updated] ()
