@@ -31,7 +31,6 @@ We designed a systematic workflow for mining underground metabolism, which combi
          pip install plotly
          pip install pubchempy
          pip install rdchiral==1.1.0
-         pip install rdkit
          pip install rdkit-pypi==2022.9.5
          pip install rxnmapper==0.3.0
          pip install scikit-learn
