@@ -500,7 +500,7 @@ def get_gene2ec_dict_clean(sce_gene_clean_ec):
 
 def get_ec2gene_dict_clean(gene2ec_dict):
     clean_gene_list = list(gene2ec_dict.keys())
-    ## gene2EC 转换为 ec2gene
+    ## gene2EC to ec2gene
     clean_ec2gene_dict = {}
     for gene, ec_list in gene2ec_dict.items():
         for ec in ec_list:
@@ -1413,7 +1413,7 @@ def process_smiles_annotation(i,yeast_total_smiles):    ###The highest similarit
     sim_smile = ' '
     for j in yeast_total_smiles:
         tmp_score = compare_smiles(i, j)  
-        if compare_smiles_inchikey(i,j) or (tmp_score == 1 and are_atom_counts_equal(i,j)):##后面是针对非碳原子
+        if compare_smiles_inchikey(i,j) or (tmp_score == 1 and are_atom_counts_equal(i,j)):
             score_init = 1
             sim_smile = j
             break
